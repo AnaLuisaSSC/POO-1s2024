@@ -8,6 +8,7 @@ public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         int opcao = 0;
+        Livraria livraria = new Livraria();
 
         while (opcao != 4){
             System.out.println("1 - Adicionar livro");
@@ -19,9 +20,26 @@ public static void main(String[] args) {
             switch (opcao) {
                 case 1:
                     System.out.println("Adicionando livro");
+                    int id; String titulo;
+                    String nomeAutor; String anopublicacao; String editora;
+                    System.out.println("Id: ");
+                    id = sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("Titulo: ");
+                    titulo = sc.nextLine();
+                    System.out.println("Autor: ");
+                    nomeAutor = sc.nextLine();
+                    System.out.println("Ano: ");
+                    anopublicacao = sc.nextLine();
+                    System.out.println("Editora: ");
+                    editora = sc.nextLine();
+
+                    Livro l  = new Livro(id, titulo, nomeAutor, anopublicacao, editora);
+                    livraria.cadastroLivro(l);
                     break;
                 case 2:
                     System.out.println("Listando livro");
+                    System.out.println(livraria.listarLivros());
                     break;
                 case 3:
                     System.out.println("Deletando livro");
