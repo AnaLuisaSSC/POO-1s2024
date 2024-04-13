@@ -26,8 +26,14 @@ public class Livraria {
     }
     public String detalharLivroPorId(int id){
         String detalheLivro = "livro não encontrado. \n";
+        for (Livro livro : livros) {
+           if (livro.id == id){
+            detalheLivro = livro.toString();
+           };
+        }
 
         return detalheLivro;
     }
+    
 }
 
