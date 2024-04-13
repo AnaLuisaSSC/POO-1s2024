@@ -24,5 +24,10 @@ public class Livraria {
 
         return listarLivros;
     }
+    public String detalharLivroPorId(int id){
+        String detalheLivro = "livro não encontrado. \n";
+
+        return detalheLivro;
+    }
 }
 
