@@ -25,15 +25,15 @@ public class Livraria {
         return listarLivros;
     }
     public String detalharLivroPorId(int id){
-        String detalheLivro = "livro não encontrado. \n";
+        String detalheLivro = "livro não encontrado. \n";/*nao encontar */
         for (Livro livro : livros) {
-           if (livro.id == id){
+           if (livro.id == id){ /*se id for igual a algum  que existe ele mostra o livro e nao a frase 'livro nao encontrado' */
             detalheLivro = livro.toString();
            };
         }
 
         return detalheLivro;
-    }
+    } 
     
 }
 
