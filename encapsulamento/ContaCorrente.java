@@ -11,21 +11,19 @@ public class ContaCorrente {
         this.saldo = 0;
     }
 
-    public double getSaldo(){
-        return this.saldo;
-    }
-
-    public int getNumero(){
+    public int getNumero() {
         return this.numero;
     }
 
-    public void setNumero(int numeroConta){
-        //auditoria, pois forcei o usuario a usar esse metodo, passar pelo setNumero
-
-        this.numero = numeroConta;
-        this.saldo = 0;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
-   
+
+    public double getSaldo() {
+        return this.saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 }
-
-
