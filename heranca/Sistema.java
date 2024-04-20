@@ -1,5 +1,6 @@
 package heranca;
 
+import heranca.empresa.Diretor;
 import heranca.empresa.Engenheiro;
 import heranca.empresa.Gerente;
 
@@ -11,9 +12,13 @@ public class Sistema { // implementa main, public static...
         Engenheiro eng2 = new Engenheiro("Pedro", 124, 124, "crea 2", "Orientação a Objeto", 150000.0);
     
         Gerente ger1 = new Gerente("JP", 125, 125, 200000.0, 2);
-    System.out.println(eng1);
-    System.out.println(eng2);
-    System.out.println(ger1);
+
+        Diretor dir1 = new Diretor("Jotta", 126, 126, 300000.0, 1)
+    
+        System.out.println(eng1);
+        System.out.println(eng2);
+        System.out.println(ger1);
+        System.out.println(dir1);
     }
    
 }

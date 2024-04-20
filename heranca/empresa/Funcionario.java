@@ -1,21 +1,19 @@
 package heranca.empresa;
 
-public class Diretor extends Funcionario{
-        private String nome; 
-        private Integer cpf;
-        private Integer telefone;
-        private Double salario; 
-        private Integer quantidadeGerencias;
+public class Funcionario {
+    protected String nome; 
+    protected Integer cpf;
+    protected Integer telefone;
+    protected Double salario; 
 
-        private Diretor(){}
+    private Funcionario(){}
 
 
-    public Diretor(String nome, Integer cpf, Integer telefone, Double salario, Integer quantidadeGerencias) {
+    public Funcionario(String nome, Integer cpf, Integer telefone, Double salario) {
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
         this.salario = salario;
-        this.quantidadeGerencias = quantidadeGerencias;
     }
 
 
@@ -51,18 +49,10 @@ public class Diretor extends Funcionario{
         this.salario = salario;
     }
 
-    public Integer getQuantidadeGerencias() {
-        return this.quantidadeGerencias;
-    }
-
-    public void setQuantidadeGerencias(Integer quantidadeGerencias) {
-        this.quantidadeGerencias = quantidadeGerencias;
-    }
-
     public Double getBonificacao(){
         return this.salario * 0.35;
     }
-
+    
 
     @Override
     public String toString() {
@@ -71,12 +61,8 @@ public class Diretor extends Funcionario{
             ", cpf='" + getCpf() + "'" +
             ", telefone='" + getTelefone() + "'" +
             ", salario='" + getSalario() + "'" +
-            ", quantidadeGerencias='" + getQuantidadeGerencias() + "'" +
             ", bonificacao='"+ getBonificacao() + "'" +
             "}";
     }
-
-
+    
 }
-           
-                
