@@ -70,7 +70,7 @@ public class Engenheiro { //esta dentro do {} amarelo é da classe engenheiro
         this.salario = salario;
     }
 
-    public Double getBomificacao () { // caucula a bonificacao do salario daquele engenheiro
+    public Double getBonificacao () { // caucula a bonificacao do salario daquele engenheiro
         return this.salario * 0.15;
     }
 
@@ -84,6 +84,7 @@ public class Engenheiro { //esta dentro do {} amarelo é da classe engenheiro
             ", crea='" + getCrea() + "'" +
             ", projeto='" + getProjeto() + "'" +
             ", salario='" + getSalario() + "'" +
+            ", bonificacao='"+ getBonificacao() + "'" +
             "}";
     }
     
